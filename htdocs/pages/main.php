@@ -22,11 +22,6 @@ include ('../layout/bdd.php')
         <?php @include '../partials/header.php'; ?>
     </header>
     <section>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
         <a href="/pages/connexion.php">lien</a>
         <h2>Bienvenue sur MusicHub mon petit <?php echo $_SESSION['pseudo']?></h2>
     </section>

@@ -4,15 +4,7 @@
 $black  : black;
 
 section{
-    margin-top:10px;
-}
-
-.margin-navbar{
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    margin-top: 100px;
 }
 
 img{
@@ -21,10 +13,11 @@ img{
     margin-right: auto;
 }
 
-.color-navbar-black{
+.navbar{
     background-color: $black;
 }
 
 #menu{
     margin-top: 200px;
 }
+
