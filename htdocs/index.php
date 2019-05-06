@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Hub</title>
-    
+    <link rel="icon" type="image/png" href="assets/img/icon.png" />
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-    <nav class="navbar fixed-top navbar-light bg-light">
-        <img src=""
-    </nav>
+        <nav class="navbar fixed-top navbar-light bg-dark">
+            <a class="navbar-brand" href="">adfadfade</a>
+            <img src="assets/img/logo.png" width='150px'>
+            <a class="navbar-brand" href="">adfadfade</a>
+
+        </nav>
     </header>
-    <section1></section1>
+    <section1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="bob"><p>a</p></div>
+    </section1>
 </body>
 <!-- CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
