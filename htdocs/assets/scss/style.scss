@@ -1,0 +1,30 @@
+@import '_color.scss';
+@import '_forms.scss';
+
+$black  : black;
+
+section{
+    margin-top:10px;
+}
+
+.margin-navbar{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.color-navbar-black{
+    background-color: $black;
+}
+
+#menu{
+    margin-top: 200px;
+}
