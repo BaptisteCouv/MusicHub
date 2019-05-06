@@ -8,7 +8,6 @@
   <title>Title</title>
 </head>
 <body>
-  
 <script src="assets/js/util.js"></script>
 </body>
 </html>
