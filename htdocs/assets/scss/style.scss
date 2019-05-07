@@ -35,7 +35,7 @@
 }
 
 .recherch{
-    background-color: #1C1C1C;
+    background-color: transparent;
     height: 40px;
     margin-top: 75px;
     text-align: center;
@@ -46,7 +46,7 @@
 #site-search{
     width: 100px;
     height: 30px;
-    background-color: white;
+    background-color: none;
     margin-right: auto;
     margin-left: auto;
 }
@@ -58,10 +58,8 @@
 }
 
 .grid{
-    background-color: blue;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 10px;
     height: 150px;
 }
 
@@ -74,6 +72,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.text-grid{
+    //ajouter des margin
+}
+
 /*****************************************************************************************************
     CONNEXION.PHP
 *****************************************************************************************************/

@@ -6,6 +6,10 @@ include('../layout/bdd.php');
 //on récupère la video tendance
 include '../layout/recuperationVideoTendance.php';
 
+//on récupère toutes les videos 
+include '../layout/recuperationVideos.php';
+
+
 ?>
 
 <!DOCTYPE html>
@@ -29,48 +33,33 @@ include '../layout/recuperationVideoTendance.php';
     </header>
     <div class="recherch col-12">
         <div class="recherch-2 col-3">
-            <input type="search" id="site-search" name="recherche" aria-label="Search through site content">
+            <!-- <input type="search" id="site-search" name="recherche" aria-label="Search through site content" placeholder="Rechercher"> -->
         </div>
     </div>
     <section id="main-sections"> 
         <div class="container-fluid">
-            <div class="row">
-                <div class="user-list col-2">
-
-                </div>
-                <div class="user-favorite col-6 offset-1">
-                    <video id="our-video" width="900" height="400" controls>
-                        <source src="<?php $videoPath ?>" type="video/mp4">
+            <div class="row justify-content-center">
+                <div class="user-favorite">
+                    <video id="our-video" width="100%" height="100%" controls>
+                        <source src="<?php echo $videoTendancePath ?>" type="video/mp4">
                     </video>
-                </div>
-                <div class="user-favorite-update col-2 offset-1 ">
-                    
                 </div>
             </div>
         </div>
         <div class="container-fluid" id="grid">
-            <div class="row">
-                <div class="grid col-2 offset-3">a
-                <?php
-
-
-
+            <div class="row justify-content-center">
+                <?php  foreach ($videos as $video){
+                    echo '<div class="grid col-2">
+                            <video id="our-video" width="100%" height="100%" >
+                                <source src="'. $video["videoPath"].'" type="video/mp4">
+                            </video>
+                            <p class="text-grid">'. $video["videoName"] .'</p>
+                          </div>';
+                };
 
                 ?>
-
-                </div>
-                <div class="grid col-2 ml-4">a</div>
-                <div class="grid col-2 ml-4">a</div>
-                <div class="grid col-2 ml-4">a</div>
-            </div>
-            <div class="row">
-                <div class="grid col-2 offset-3">a</div>
-                <div class="grid col-2 ml-4">a</div>
-                <div class="grid col-2 ml-4">a</div>
-                <div class="grid col-2 ml-4">a</div>
             </div>
         </div>
-        <div class="test"></div>
     </section>
 </body>
 

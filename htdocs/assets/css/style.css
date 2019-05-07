@@ -372,10 +372,8 @@ input[type=submit] {
 }
 
 .grid {
-  background-color: blue;
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 10px;
   height: 150px;
 }
 
