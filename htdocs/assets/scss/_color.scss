@@ -1,0 +1,23 @@
+$colorBody: #0E0E0E; 
+$colorOrange : #ff9900;
+$colorBlack: black;
+
+body {
+    background-color: $colorBody;
+}
+
+.color-head{
+    background-color: $colorBlack;
+}
+
+.color-text{
+    color: white;
+    &:hover{
+        color: $colorOrange;
+        }&-orange{
+            color: $colorOrange;
+            font-weight: bold;
+            }&:hover{
+                color: $colorOrange;
+            }
+}
