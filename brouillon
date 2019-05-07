@@ -1,0 +1,3 @@
+<div class="lien">
+    <h5>Bienvenue sur MusicHub mon petit <?php echo $_SESSION['pseudo']; echo $_SESSION['id'] ?></h5>
+</div>

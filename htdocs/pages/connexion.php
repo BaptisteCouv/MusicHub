@@ -17,7 +17,7 @@ include ('../layout/bdd.php')
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 
-<body class="test">
+<body id="background">
 
   <?php @include '../partials/header.php' ?>
 

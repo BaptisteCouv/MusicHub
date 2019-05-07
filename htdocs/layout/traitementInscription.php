@@ -26,8 +26,18 @@ if ($isUserAvailables) {
     header('Location: ../pages/connexion.php?error=invalidInput');
 } else {
     $crerateUser->execute(array($pseudo, $mdp, $mail));
+
+    //on récupère toutes les infos de l'user 
+    $reponse = $bdd->prepare("SELECT * FROM users WHERE userName = ?");
+    $reponse->execute(array(
+        $pseudo
+    ));
+    $userInfo = $reponse->fetch();
+
+    //on sauvegarde l'id et le pseudo dans 2 variables session
     session_start();
-    $_SESSION['pseudo']=$pseudo;
+    $_SESSION['pseudo']=$userInfo['userName'];
+    $_SESSION['id']=$userInfo['id'];
     header('Location: ../pages/main.php');
 
 }

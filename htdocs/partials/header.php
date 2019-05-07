@@ -8,15 +8,15 @@
       <li class="nav-item active" id="navbarText">
         <a class="nav-link color-text" href="../pages/main.php">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link color-text" href="#">Cathégorie</a>
-      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link color-text" href="">Cathégorie</a>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link color-text" href="../pages/connexion.php">Connexion</a>
       </li>
     </ul>
     <span class="navbar-text color-text-orange">
-      <a class="nav-link color-text-orange" href="../pages/profil.php"><i class="fas fa-user-astronaut"></i><?php echo $_SESSION['pseudo']?></a>
+      <a class="nav-link color-text-orange" href="../pages/profil.php"><i class="fas fa-user-astronaut"></i><?php echo ' '.$_SESSION['pseudo']?></a>
     </span>
     <!-- <span class="nav-link color-text" href="../pages/connexion.php">inutil</span> -->
   </div>

@@ -14,6 +14,8 @@ li{
               a{
             text-decoration: none;
             color: white;
+            position: relative;
+            z-index: 1;
                 &:hover{
                   color:$colorOrange;
                 }
@@ -21,7 +23,7 @@ li{
 
 }
 #menu nav ul{
-	width: 100%;
+  width: 100%;
 }
 #menu li{
 	width: 50%;

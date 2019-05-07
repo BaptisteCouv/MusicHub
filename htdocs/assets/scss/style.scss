@@ -1,10 +1,82 @@
 @import '_color.scss';
 @import '_forms.scss';
 
-section{
-    margin-top: 10px;
+
+/*****************************************************************************************************
+    MAIN.PHP
+*****************************************************************************************************/
+
+.lien{
+    margin-top: 100px;
+    color: $colorOrange;
 }
 
+.user{
+    /* ma vie est nul */
+    
+        &-favorite{
+            height: 400px;
+        }
+            // &-update{
+            //     background-color: yellow;
+            // }
+
+    &-list{
+        background-color: $colorBlack;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.user-favorite-update{
+    background-color: $colorBlack;
+    height: 300px;
+}
+
+.recherch{
+    background-color: #1C1C1C;
+    height: 40px;
+    margin-top: 75px;
+    text-align: center;
+    color: #A7A7A7;
+    padding-top: 5px;
+}
+
+#site-search{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#grid{
+    height: 100%;
+    margin-top: 80px;
+    background-color: $colorBody;
+}
+
+.grid{
+    background-color: blue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 150px;
+}
+
+#background-image-main{
+    margin: 0;
+    padding: 0;
+    background: url('../img/fond-main.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*****************************************************************************************************
+    CONNEXION.PHP
+*****************************************************************************************************/
 img{
     display: block;
     margin-left: auto;
@@ -15,8 +87,77 @@ img{
     margin-top: 100px;
 }
 
-.lien{
-    margin-top: 100px;
-    color: $colorOrange;
+#background{
+    margin: 0;
+    padding: 0;
+    background: url('../img/fondConnexion2.jpg');
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+        &:after{
+            content: "";
+            display: block;
+            position: fixed;
+            /* could also be absolute */
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: 0;
+            background-color: rgba(0, 0, 0, 0.88);
+        }
 }
+/*****************************************************************************************************
+    PROFIL.PHP
+*****************************************************************************************************/
+section{
+    margin-top: 10px;
+}
+
+.sectionProfil{
+    width :400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top : 100px;
+
+    h2{
+        color:white;
+    }
+
+    label{
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+            margin: 3px;
+            color:white;
+    }
+    input{
+        width:350px;
+    }
+
+}
+
+.btn-upload{
+    background-color: $colorOrange;
+    width :90px;
+    float: right;
+    margin-right:50px;
+    
+
+    &:hover{
+        background-color: darken($colorOrange, 20%);
+    }
+}
+
+#main-sections{
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
 
