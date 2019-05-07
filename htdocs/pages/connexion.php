@@ -25,10 +25,9 @@ include ('../layout/bdd.php')
   <div class="container">
     <section id="menu">
       <nav>
-        <ul>
+        <ul class="connexionList">
           <li id="log" class="active"><a href="#">Connexion</a></li>
           <li id="sign"><a href="#">Inscription</a></li>
-          <hr>
         </ul>
       </nav>
       <?php 

@@ -1,3 +1,4 @@
+@import '_color.scss';
 
 /*FORMS STYLE */
 
@@ -9,6 +10,16 @@ li{
     list-style: none;
 }
 
+.connexionList{
+              a{
+            text-decoration: none;
+            color: white;
+                &:hover{
+                  color:$colorOrange;
+                }
+            }
+
+}
 #menu nav ul{
 	width: 100%;
 }
@@ -23,20 +34,7 @@ li{
 	padding: 15px 20px;
 	text-transform: uppercase;
 }
-#menu hr{
-	position: absolute;
-	width: 20%;
-	height: 2px;
-	border: none;
-	background: #c9dfec;
-	margin: 0;
-	top: 100%;
-	transform: translateX(75%);
-	transition: transform 0.25s ease-in-out;
-}
-#menu .nextBox hr{
-	transform: translateX(325%);
-}
+
 .wrap{
 	width: 100%;
 	float: left;
@@ -48,7 +46,7 @@ li{
 	float: left;
 	z-index: 1;
 	position: absolute;
-	background: #c9dfec;
+	background: $colorOrange;
 	border-radius: 4px;
 	padding: 20px;
 	transition: all 0.5s;
@@ -57,15 +55,15 @@ li{
 	float: left;
 	width: 100%;
 	margin-bottom: 10px;
-	color: #cfd8d8;
+	color: white;
 }
 input{
 	width: 100%;
 	height: 40px;
 	float: left;
 	margin-bottom: 20px;
-	background: #eef9fe;
-	border: 1px solid #cddbee;
+	background: $colorOrange;
+	border: 1px solid $colorOrange;
 	border-radius: 4px;
 }
 input[type="submit"]{
@@ -76,24 +74,24 @@ input[type="submit"]{
 	border-radius: 20px;
 }
 #login input[type="submit"]{
-	background: #a7e245;
+	background: $colorOrange;
 	color: #FFF;
 	transition: all 0.35s ease-in-out;
 }
 #signup input[type="submit"]{
-	background: #FFF;
-	color: #a7e245;
-	border: 1px solid #a7e245;
+	background: $colorOrange;
+	color: #FFF;
+	border: 1px solid $colorOrange;
 	transition: all 0.35s ease-in-out;
 }
 #login input[type="submit"]:hover{
 	background: #FFF;
-	color: #a7e245;
-	border: 1px solid #a7e245 ;
+	color: $colorOrange;
+	border: 1px solid $colorOrange ;
 }
 #signup input[type="submit"]:hover{
-	background: #a7e245;
-	color: #FFF;
+	background:  #FFF;
+	color: $colorOrange;
 }
 .wrap #login{
   left: 0;
@@ -126,8 +124,10 @@ input[type="submit"]{
           transform: translateX(-35%);
 }
 .box.active{
-	background: #FFF;
-	z-index: 2;
+	background: $colorBody;
+  z-index: 2;
+  box-shadow: 11px 7px 19px 2px #000000;
+  
 }
 .box.active label, .box.active input{
 	opacity: 1;

@@ -1,7 +1,37 @@
 body {
-  background-color: #161720;
+  background-color: #0E0E0E;
 }
 
+.color-head {
+  background-color: black;
+}
+
+.color-text {
+  color: white;
+}
+.color-text:hover {
+  color: #ff9900;
+}
+.color-text-orange {
+  color: #ff9900;
+}
+body {
+  background-color: #0E0E0E;
+}
+
+.color-head {
+  background-color: black;
+}
+
+.color-text {
+  color: white;
+}
+.color-text:hover {
+  color: #ff9900;
+}
+.color-text-orange {
+  color: #ff9900;
+}
 /*FORMS STYLE */
 * {
   box-sizing: border-box;
@@ -9,6 +39,14 @@ body {
 
 li {
   list-style: none;
+}
+
+.connexionList a {
+  text-decoration: none;
+  color: white;
+}
+.connexionList a:hover {
+  color: #ff9900;
 }
 
 #menu nav ul {
@@ -28,22 +66,6 @@ li {
   text-transform: uppercase;
 }
 
-#menu hr {
-  position: absolute;
-  width: 20%;
-  height: 2px;
-  border: none;
-  background: #c9dfec;
-  margin: 0;
-  top: 100%;
-  transform: translateX(75%);
-  transition: transform 0.25s ease-in-out;
-}
-
-#menu .nextBox hr {
-  transform: translateX(325%);
-}
-
 .wrap {
   width: 100%;
   float: left;
@@ -56,7 +78,7 @@ li {
   float: left;
   z-index: 1;
   position: absolute;
-  background: #c9dfec;
+  background: #ff9900;
   border-radius: 4px;
   padding: 20px;
   transition: all 0.5s;
@@ -66,7 +88,7 @@ li {
   float: left;
   width: 100%;
   margin-bottom: 10px;
-  color: #cfd8d8;
+  color: white;
 }
 
 input {
@@ -74,8 +96,8 @@ input {
   height: 40px;
   float: left;
   margin-bottom: 20px;
-  background: #eef9fe;
-  border: 1px solid #cddbee;
+  background: #ff9900;
+  border: 1px solid #ff9900;
   border-radius: 4px;
 }
 
@@ -88,27 +110,27 @@ input[type=submit] {
 }
 
 #login input[type=submit] {
-  background: #a7e245;
+  background: #ff9900;
   color: #FFF;
   transition: all 0.35s ease-in-out;
 }
 
 #signup input[type=submit] {
-  background: #FFF;
-  color: #a7e245;
-  border: 1px solid #a7e245;
+  background: #ff9900;
+  color: #FFF;
+  border: 1px solid #ff9900;
   transition: all 0.35s ease-in-out;
 }
 
 #login input[type=submit]:hover {
   background: #FFF;
-  color: #a7e245;
-  border: 1px solid #a7e245;
+  color: #ff9900;
+  border: 1px solid #ff9900;
 }
 
 #signup input[type=submit]:hover {
-  background: #a7e245;
-  color: #FFF;
+  background: #FFF;
+  color: #ff9900;
 }
 
 .wrap #login {
@@ -146,8 +168,9 @@ input[type=submit] {
 }
 
 .box.active {
-  background: #FFF;
+  background: #0E0E0E;
   z-index: 2;
+  box-shadow: 11px 7px 19px 2px #000000;
 }
 
 .box.active label, .box.active input {
@@ -288,7 +311,7 @@ input[type=submit] {
   }
 }
 section {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 img {
@@ -297,13 +320,13 @@ img {
   margin-right: auto;
 }
 
-.navbar {
-  background-color: black;
-}
-
 #menu {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
+.lien {
+  margin-top: 100px;
+  color: #ff9900;
+}
 
 /*# sourceMappingURL=style.css.map */

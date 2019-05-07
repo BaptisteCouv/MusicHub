@@ -13,7 +13,7 @@ include ('../layout/bdd.php')
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Music Hub</title>
     <!-- CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="icon" type="/image/png" href="assets/img/icon.png"/>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -22,8 +22,9 @@ include ('../layout/bdd.php')
         <?php @include '../partials/header.php'; ?>
     </header>
     <section>
-        <a href="/pages/connexion.php">lien</a>
-        <h2>Bienvenue sur MusicHub mon petit <?php echo $_SESSION['pseudo']?></h2>
+        <div class="lien">
+            <h2>Bienvenue sur MusicHub mon petit <?php echo $_SESSION['pseudo']?></h2>
+        </div>>
     </section>
 </body>
 
