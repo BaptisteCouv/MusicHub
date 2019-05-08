@@ -12,7 +12,14 @@
         <a class="nav-link color-text" href="">Cathégorie</a>
       </li> -->
       <li class="nav-item">
-        <a class="nav-link color-text" href="../pages/connexion.php">Connexion</a>
+        <!-- si une session est active, on affiche le bouton 'déconnexion', sinon le bouton 'connexion' -->
+        
+        <?php if(!empty($_SESSION['id'])){
+          echo '<a class="nav-link color-text" href="../pages/deconnexion.php"> Deconnexion </a>';
+        } else
+        echo '<a class="nav-link color-text" href="../pages/connexion.php"> Connexion </a>';
+        ?>
+
       </li>
     </ul>
     <span class="navbar-text color-text-orange">
