@@ -1,5 +1,4 @@
 <?php
-session_start();
 include ('bdd.php');
 
 $idUser= $_SESSION['id'];

@@ -322,6 +322,16 @@ input[type=submit] {
     transform: translateX(-30%) scale(0.9, 0.8);
   }
 }
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+}
+
 /*****************************************************************************************************
     MAIN.PHP
 *****************************************************************************************************/
@@ -349,7 +359,7 @@ input[type=submit] {
 }
 
 .recherch {
-  background-color: #1C1C1C;
+  background-color: transparent;
   height: 40px;
   margin-top: 75px;
   text-align: center;
@@ -360,7 +370,7 @@ input[type=submit] {
 #site-search {
   width: 100px;
   height: 30px;
-  background-color: white;
+  background-color: none;
   margin-right: auto;
   margin-left: auto;
 }
@@ -374,7 +384,7 @@ input[type=submit] {
 .grid {
   margin-top: 20px;
   margin-bottom: 20px;
-  height: 150px;
+  height: 200px;
 }
 
 #background-image-main {
@@ -385,6 +395,14 @@ input[type=submit] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#text-grid {
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 /*****************************************************************************************************
@@ -430,9 +448,9 @@ section {
 
 .sectionProfil {
   width: 400px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 100px;
+  min-height: 90%;
+  background-color: aqua;
 }
 .sectionProfil h2 {
   color: white;
@@ -460,6 +478,97 @@ section {
 
 #main-sections {
   margin-top: 100px;
+}
+
+#sectionChoix {
+  margin-top: 100px;
+  min-height: 100%;
+}
+
+.color-card {
+  height: 400px;
+  width: 300px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.733), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.nb-point {
+  margin-top: 60px;
+  font-size: 120px;
+  font-family: "Anton", sans-serif;
+  color: #ff9900;
+}
+
+.text-point {
+  margin-top: 30px;
+  font-size: 30px;
+  color: #ff9900;
+}
+
+.ref-buton {
+  text-align: center;
+  font-size: 70px;
+  text-transform: uppercase;
+  color: white;
+}
+.ref-buton:hover {
+  color: #ff9900;
+  text-decoration: none;
+}
+
+#img-none {
+  margin: 0;
+  padding: 0;
+  background: url("../img/fond-main.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+#form {
+  margin-bottom: 300px;
+  margin-top: 200px;
+  color: white;
+}
+
+.padding-pro {
+  margin-top: 20px;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  height: 36px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.row-up {
+  text-decoration: none;
+  color: white;
+}
+.row-up:hover {
+  color: #ff9900;
+}
+
+/*****************************************************************************************************
+    VIDEO.PHP
+*****************************************************************************************************/
+.nameUploader {
+  color: #ff9900;
+}
+
+.textWhite {
+  margin-top: 10px;
+  color: white;
+}
+
+.cut-container {
+  width: 500px;
+  border: 2px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */

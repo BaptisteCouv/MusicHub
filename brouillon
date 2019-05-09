@@ -1,3 +1,5 @@
 <div class="lien">
     <h5>Bienvenue sur MusicHub mon petit <?php echo $_SESSION['pseudo']; echo $_SESSION['id'] ?></h5>
 </div>
+
+<?php if (isset($_GET['error'])) echo '<span class="text-danger">Mauvais format fichier, importé un fichier MP4 ou MOV. </span>';?>

@@ -3,13 +3,11 @@ session_start();
 // connexion à la base de données MusicHub
 include('../layout/bdd.php');
 
-//on récupère la video tendance
-include '../layout/recuperationVideoTendance.php';
-
 //on récupère toutes les videos 
-include '../layout/recuperationVideos.php';
+include ('../layout/recuperationVideos.php');
 
-
+//on récupère la video avec le plus de commentaires
+include ('../layout/recuperationVideoTendance.php');
 ?>
 
 <!DOCTYPE html>
@@ -50,10 +48,12 @@ include '../layout/recuperationVideos.php';
             <div class="row justify-content-center">
                 <?php  foreach ($videos as $video){
                     echo '<div class="grid col-2">
-                            <video id="our-video" width="100%" height="100%" >
-                                <source src="'. $video["videoPath"].'" type="video/mp4">
-                            </video>
-                            <p class="text-grid">'. $video["videoName"] .'</p>
+                                <a href="video.php?link='. $video["videoPath"].'">
+                                <video id="our-not-video" width="100%" height="150px">
+                                    <source src="'. $video["videoPath"].'" type="video/mp4">
+                                </video>
+                                </a>
+                            <div id="text-grid">'. $video["videoName"] .'</div>
                           </div>';
                 };
 
